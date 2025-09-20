@@ -16,7 +16,7 @@ const reviews = [
     role: "Progressive Farmer",
     company: "Rodriguez Farms",
     rating: 5,
-    comment: "AgriSense AI has revolutionized how I manage my 500-acre operation. The yield predictions helped me optimize harvest timing and increase profits by 23% this season.",
+    comment: "CropIQ has revolutionized how I manage my 500-acre operation. The yield predictions helped me optimize harvest timing and increase profits by 23% this season.",
     initials: "MR"
   },
   {

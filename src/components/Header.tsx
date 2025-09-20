@@ -11,7 +11,7 @@ const Header = () => {
             <div className="bg-gradient-hero p-2 rounded-lg">
               <Leaf className="h-6 w-6 text-white" />
             </div>
-            <span className="text-xl font-bold text-foreground">AgriSense AI</span>
+            <span className="text-xl font-bold text-foreground">CropIQ</span>
           </div>
 
           {/* Navigation */}

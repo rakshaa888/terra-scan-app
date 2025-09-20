@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="bg-gradient-hero p-2 rounded-lg">
                 <Leaf className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold">AgriSense AI</span>
+              <span className="text-xl font-bold">CropIQ</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Empowering the future of agriculture with AI-driven insights and precision monitoring 
@@ -57,7 +57,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm mb-4 md:mb-0">
-            © 2024 AgriSense AI. All rights reserved.
+            © 2024 CropIQ. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>

@@ -59,7 +59,7 @@ const VideoSection = () => {
 
             {/* Video Title Overlay */}
             <div className="absolute top-6 left-6 bg-black/50 backdrop-blur-sm rounded-lg px-4 py-2">
-              <h3 className="text-white font-semibold">AgriSense AI Platform Overview</h3>
+              <h3 className="text-white font-semibold">CropIQ Platform Overview</h3>
             </div>
           </div>
 
