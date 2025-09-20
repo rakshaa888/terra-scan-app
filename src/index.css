@@ -9,25 +9,42 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 13% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 120 60% 97%;
+    --secondary-foreground: 142 76% 36%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 120 60% 97%;
+    --muted-foreground: 220 13% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 142 46% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Agriculture-specific colors */
+    --agriculture-green: 142 76% 36%;
+    --agriculture-light: 120 60% 97%;
+    --agriculture-dark: 142 86% 25%;
+    --earth-brown: 32 25% 35%;
+    --soil-brown: 25 45% 25%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 46% 50%));
+    --gradient-section: linear-gradient(180deg, hsl(120 60% 99%), hsl(120 60% 97%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(120 60% 98%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(142 76% 36% / 0.1);
+    --shadow-medium: 0 8px 30px -8px hsl(142 76% 36% / 0.15);
+    --shadow-strong: 0 20px 40px -12px hsl(142 76% 36% / 0.25);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
