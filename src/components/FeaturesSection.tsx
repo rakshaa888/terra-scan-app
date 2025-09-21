@@ -97,15 +97,121 @@ const FeaturesSection = () => {
           </div>
           
           {/* Dashboard Mockup */}
-          <div className="bg-gradient-to-br from-agriculture-light to-white border-2 border-agriculture/20 rounded-xl p-6 min-h-[400px] flex items-center justify-center">
-            <div className="text-center">
-              <div className="bg-gradient-hero p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <Brain className="h-10 w-10 text-white" />
+          <div className="bg-gradient-to-br from-agriculture-light to-white border-2 border-agriculture/20 rounded-xl p-6 min-h-[500px]">
+            {/* Dashboard Header */}
+            <div className="flex justify-between items-center mb-6">
+              <h4 className="text-xl font-semibold text-foreground">CropIQ Dashboard</h4>
+              <div className="flex space-x-2">
+                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
               </div>
-              <h4 className="text-xl font-semibold text-foreground mb-2">Dashboard Preview</h4>
-              <p className="text-muted-foreground">
-                Interactive maps, real-time data visualization, and comprehensive analytics
-              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {/* Spectral Health Map */}
+              <div className="lg:col-span-2 bg-white rounded-lg p-4 shadow-soft">
+                <h5 className="text-sm font-semibold text-foreground mb-3 flex items-center">
+                  <MapPin className="h-4 w-4 mr-2 text-primary" />
+                  Spectral Health Map
+                </h5>
+                <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-lg h-48 relative overflow-hidden">
+                  <div className="absolute inset-4 grid grid-cols-4 gap-1">
+                    {[...Array(16)].map((_, i) => (
+                      <div 
+                        key={i} 
+                        className={`rounded ${
+                          i % 3 === 0 ? 'bg-green-400' : i % 5 === 0 ? 'bg-yellow-400' : 'bg-green-500'
+                        } opacity-80`}
+                      />
+                    ))}
+                  </div>
+                  <div className="absolute bottom-2 right-2 bg-white/90 rounded px-2 py-1 text-xs">
+                    Field A-12 | 45.2 acres
+                  </div>
+                </div>
+              </div>
+
+              {/* Anomaly Alerts */}
+              <div className="bg-white rounded-lg p-4 shadow-soft">
+                <h5 className="text-sm font-semibold text-foreground mb-3 flex items-center">
+                  <AlertTriangle className="h-4 w-4 mr-2 text-orange-500" />
+                  Anomaly Alerts
+                </h5>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-2 text-xs">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span>Water stress detected - Field B-7</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-xs">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                    <span>Nutrient deficiency - Zone 3</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-xs">
+                    <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                    <span>Pest activity - North sector</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Temporal Trend Plot */}
+              <div className="bg-white rounded-lg p-4 shadow-soft">
+                <h5 className="text-sm font-semibold text-foreground mb-3 flex items-center">
+                  <TrendingUp className="h-4 w-4 mr-2 text-blue-500" />
+                  Yield Forecast
+                </h5>
+                <div className="h-32 bg-gradient-to-t from-blue-50 to-transparent rounded relative">
+                  <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polyline
+                      fill="none"
+                      stroke="#3b82f6"
+                      strokeWidth="2"
+                      points="0,80 20,65 40,70 60,45 80,35 100,25"
+                    />
+                  </svg>
+                  <div className="absolute bottom-2 right-2 text-xs text-muted-foreground">
+                    +15% projected
+                  </div>
+                </div>
+              </div>
+
+              {/* Soil Conditions */}
+              <div className="bg-white rounded-lg p-4 shadow-soft">
+                <h5 className="text-sm font-semibold text-foreground mb-3 flex items-center">
+                  <TestTube className="h-4 w-4 mr-2 text-green-600" />
+                  Soil Conditions
+                </h5>
+                <div className="space-y-2 text-xs">
+                  <div className="flex justify-between">
+                    <span>pH Level</span>
+                    <span className="text-green-600 font-medium">6.8 Optimal</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Moisture</span>
+                    <span className="text-blue-600 font-medium">72% Good</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Nitrogen</span>
+                    <span className="text-orange-600 font-medium">Low</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Risk Zones */}
+              <div className="bg-white rounded-lg p-4 shadow-soft">
+                <h5 className="text-sm font-semibold text-foreground mb-3 flex items-center">
+                  <Target className="h-4 w-4 mr-2 text-red-500" />
+                  Risk Zones
+                </h5>
+                <div className="h-32 bg-gradient-to-br from-red-50 to-yellow-50 rounded relative">
+                  <div className="absolute top-2 left-2 w-6 h-6 bg-red-400 rounded-full opacity-70"></div>
+                  <div className="absolute bottom-4 right-4 w-4 h-4 bg-yellow-400 rounded-full opacity-70"></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xs text-center">
+                    <div className="text-red-600 font-medium">High Risk: 2 zones</div>
+                    <div className="text-yellow-600">Medium Risk: 1 zone</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
