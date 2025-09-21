@@ -4,6 +4,22 @@ import heroImage from "@/assets/hero-agriculture.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Animated Background Decorations */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Floating Circles */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-vibrant-cyan/20 to-vibrant-blue/20 rounded-full animate-float"></div>
+        <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-vibrant-purple/20 to-vibrant-pink/20 rounded-full animate-float-delayed"></div>
+        <div className="absolute bottom-40 left-1/4 w-20 h-20 bg-gradient-to-r from-agriculture/20 to-vibrant-cyan/20 rounded-full animate-drift"></div>
+        
+        {/* Rotating Geometric Shapes */}
+        <div className="absolute top-32 right-1/4 w-16 h-16 border-2 border-vibrant-orange/30 animate-rotate-slow"></div>
+        <div className="absolute bottom-32 right-10 w-12 h-12 bg-gradient-to-r from-vibrant-yellow/20 to-vibrant-orange/20 transform rotate-45 animate-pulse-glow"></div>
+        
+        {/* Moving Lines */}
+        <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-vibrant-cyan/50 to-transparent animate-slide-horizontal"></div>
+        <div className="absolute bottom-20 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-vibrant-purple/50 to-transparent animate-slide-horizontal" style={{ animationDelay: '7s' }}></div>
+      </div>
+
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

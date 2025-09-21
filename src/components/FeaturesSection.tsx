@@ -55,8 +55,16 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="py-20 bg-gradient-section">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-gradient-section relative overflow-hidden">
+      {/* Animated Background Decorations */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-10 left-5 w-6 h-6 bg-vibrant-cyan/30 rounded-full animate-float"></div>
+        <div className="absolute top-32 right-10 w-4 h-4 bg-vibrant-purple/30 rounded-full animate-drift"></div>
+        <div className="absolute bottom-20 left-1/3 w-8 h-8 bg-agriculture/20 rounded-full animate-float-delayed"></div>
+        <div className="absolute top-1/2 right-5 w-10 h-1 bg-gradient-to-r from-vibrant-orange/20 to-vibrant-yellow/20 animate-pulse-glow"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Smarter Farming with AI-Powered Insights

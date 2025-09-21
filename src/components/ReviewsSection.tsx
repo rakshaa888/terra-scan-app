@@ -39,8 +39,16 @@ const reviews = [
 
 const ReviewsSection = () => {
   return (
-    <section className="py-20 bg-gradient-section">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-gradient-section relative overflow-hidden">
+      {/* Animated Background Decorations */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-12 right-12 w-14 h-14 bg-gradient-to-r from-vibrant-yellow/15 to-vibrant-orange/15 rounded-full animate-float-delayed"></div>
+        <div className="absolute bottom-24 left-16 w-6 h-6 border-2 border-vibrant-cyan/25 animate-rotate-slow"></div>
+        <div className="absolute top-1/3 left-8 w-1 h-8 bg-gradient-to-b from-vibrant-purple/30 to-transparent animate-pulse-glow"></div>
+        <div className="absolute bottom-1/3 right-6 w-4 h-4 bg-agriculture/25 transform rotate-45 animate-drift"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             What Our Users Say
