@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Crop Intelligence
-          <span className="block text-4xl md:text-6xl bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
+          <span className="block text-4xl md:text-6xl bg-gradient-to-r from-vibrant-cyan via-vibrant-purple to-vibrant-pink bg-clip-text text-transparent">
             at Scale
           </span>
         </h1>
@@ -27,26 +27,26 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-3">
+          <Button variant="vibrant" size="lg" className="text-lg px-8 py-3">
             Start Monitoring
           </Button>
-          <Button variant="hero-outline" size="lg" className="text-lg px-8 py-3">
+          <Button variant="colorful" size="lg" className="text-lg px-8 py-3">
             Watch Demo
           </Button>
         </div>
 
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-green-400">99.2%</div>
+          <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-vibrant-cyan/30">
+            <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-vibrant-cyan to-vibrant-blue bg-clip-text text-transparent">99.2%</div>
             <div className="text-sm text-gray-300">Accuracy Rate</div>
           </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-green-400">24/7</div>
+          <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-vibrant-purple/30">
+            <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-vibrant-purple to-vibrant-pink bg-clip-text text-transparent">24/7</div>
             <div className="text-sm text-gray-300">Monitoring</div>
           </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-green-400">50K+</div>
+          <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-agriculture/30">
+            <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-agriculture to-vibrant-cyan bg-clip-text text-transparent">50K+</div>
             <div className="text-sm text-gray-300">Fields Analyzed</div>
           </div>
         </div>

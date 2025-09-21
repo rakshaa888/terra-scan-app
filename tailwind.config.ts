@@ -56,6 +56,14 @@ export default {
           DEFAULT: "hsl(var(--earth-brown))",
           soil: "hsl(var(--soil-brown))",
         },
+        vibrant: {
+          blue: "hsl(var(--vibrant-blue))",
+          purple: "hsl(var(--vibrant-purple))",
+          orange: "hsl(var(--vibrant-orange))",
+          yellow: "hsl(var(--vibrant-yellow))",
+          pink: "hsl(var(--vibrant-pink))",
+          cyan: "hsl(var(--vibrant-cyan))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -71,11 +79,18 @@ export default {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-section': 'var(--gradient-section)',
         'gradient-card': 'var(--gradient-card)',
+        'gradient-vibrant': 'var(--gradient-vibrant)',
+        'gradient-success': 'var(--gradient-success)',
+        'gradient-info': 'var(--gradient-info)',
+        'gradient-warning': 'var(--gradient-warning)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'medium': 'var(--shadow-medium)',
         'strong': 'var(--shadow-strong)',
+        'colorful': 'var(--shadow-colorful)',
+        'blue': 'var(--shadow-blue)',
+        'purple': 'var(--shadow-purple)',
       },
       borderRadius: {
         lg: "var(--radius)",
